@@ -16,7 +16,7 @@
     --decorative-text-color: #353430;
     --transparent-color: rgba(50, 49, 45, 0.4);
   }
-
+  
   .header__rec {
     visibility: hidden;
   }
@@ -48,10 +48,10 @@
   --decorative-color: #353430;
   --decorative-text-color: #353430;
   --transparent-color: rgba(50, 49, 45, 0.4);
+}
 
-  .header__rec {
-    visibility: hidden;
-  };
+.theme-light .page .header__rec {
+  visibility: hidden;
 }
 /* Вам также нужно будет написать ряд подобных селекторов */
 /* .theme-light .page {} */

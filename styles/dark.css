@@ -30,8 +30,8 @@
   --decorative-color: #ff0070;
   --decorative-text-color: #000028;
   --transparent-color: rgba(255, 0, 112, 0.4);
+}
 
-  .header__rec {
-    visibility: visible;
-  };
+.theme-dark .page .header__rec {
+  visibility: visible;
 }
