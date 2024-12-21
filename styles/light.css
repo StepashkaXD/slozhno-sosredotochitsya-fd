@@ -38,7 +38,12 @@
   --transparent-color: rgba(50, 49, 45, 0.4);
 }
 
-.theme-light .page {
+.theme-light .page .header__rec {
+  visibility: hidden;
+}
+/* Вам также нужно будет написать ряд подобных селекторов */
+/* .theme-light .page {} */
+/* .theme-light .page {
   --bg-image: url('../images/cover-image-light.png');
   --bg-color: #fff1f7;
   --accent-color: #ff8dcb;
@@ -48,10 +53,4 @@
   --decorative-color: #353430;
   --decorative-text-color: #353430;
   --transparent-color: rgba(50, 49, 45, 0.4);
-}
-
-.theme-light .page .header__rec {
-  visibility: hidden;
-}
-/* Вам также нужно будет написать ряд подобных селекторов */
-/* .theme-light .page {} */
+} */

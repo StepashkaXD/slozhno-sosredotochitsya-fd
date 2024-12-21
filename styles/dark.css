@@ -20,7 +20,11 @@
   --transparent-color: rgba(255, 0, 112, 0.4);
 }
 
-.theme-dark .page {
+.theme-dark .page .header__rec {
+  visibility: visible;
+}
+
+/* .theme-dark .page {
   --bg-image: url('../images/cover-image-dark.png');
   --bg-color: #000028;
   --accent-color: #ff0070;
@@ -30,8 +34,4 @@
   --decorative-color: #ff0070;
   --decorative-text-color: #000028;
   --transparent-color: rgba(255, 0, 112, 0.4);
-}
-
-.theme-dark .page .header__rec {
-  visibility: visible;
-}
+} */
