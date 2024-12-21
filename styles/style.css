@@ -78,6 +78,7 @@ button:focus-visible {
   align-items: center;
   justify-items: end;
   height: 100vh;
+  min-block-size: 668px;
 }
 
 .header__rec {
@@ -226,6 +227,8 @@ button:focus-visible {
   display: grid;
   height: 100vh;
   background-color: var(--bg-color);
+  height: 100vh;
+  min-block-size: 667px;
 }
 
 .footer__title {
