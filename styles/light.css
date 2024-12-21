@@ -1,8 +1,26 @@
 /*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
+Специально для светлой темы при наличии класса.
+Здесь окажутся стили, которые нужно переопределить принудительно,
+переключая тему
 */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-image: url("../images/cover-image-light.png");
+    --bg-color: #fff1f7;
+    --accent-color: #ff8dcb;
+    --text-color: #353430;
+    --header-title-color: #ffc2e6;
+    --section-title-color: #353430;
+    --decorative-color: #353430;
+    --decorative-text-color: #353430;
+    --transparent-color: rgba(50, 49, 45, 0.4);
+  }
+
+  .header__rec {
+    visibility: hidden;
+  }
+}
 
 :root.theme-light {
   /* сохраните этот селектор в приведённом виде.
@@ -12,93 +30,28 @@
   --bg-image: url("../images/cover-image-light.png");
   --bg-color: #fff1f7;
   --accent-color: #ff8dcb;
-  --title-color: #ffc2e6;
   --text-color: #353430;
-  --text-title-color: #353430;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg-image: url("../images/cover-image-light.png");
-    --bg-color: #fff1f7;
-    --accent-color: #ff8dcb;
-    --title-color: #ffc2e6;
-    --text-color: #353430;
-    --text-title-color: #353430;
-  }
+  --header-title-color: #ffc2e6;
+  --section-title-color: #353430;
+  --decorative-color: #353430;
+  --decorative-text-color: #353430;
+  --transparent-color: rgba(50, 49, 45, 0.4);
 }
 
 .theme-light .page {
-  color: var(--text-color);
-  background-image: var(--bg-image);
-  /* Вам также нужно будет написать ряд подобных селекторов */
-}
+  --bg-image: url("../images/cover-image-light.png");
+  --bg-color: #fff1f7;
+  --accent-color: #ff8dcb;
+  --text-color: #353430;
+  --header-title-color: #ffc2e6;
+  --section-title-color: #353430;
+  --decorative-color: #353430;
+  --decorative-text-color: #353430;
+  --transparent-color: rgba(50, 49, 45, 0.4);
 
-.theme-light .decorated-zone::after {
-  border-left: 1px solid var(--text-color);
-  border-bottom: 1px solid var(--text-color);
+  .header__rec {
+    visibility: hidden;
+  };
 }
-
-.theme-light .decorated-zone::before {
-  border-top: 1px solid var(--text-color);
-  border-right: 1px solid var(--text-color);
-}
-
-.theme-light .title-decor {
-  background-color: var(--accent-color);
-  color: var(--text-title-color);
-}
-
-.theme-light .text-link {
-  text-shadow: 2px 2px 0 var(--accent-color);
-}
-
-.theme-light a:hover {
-  border-bottom: 1px solid var(--text-color);
-}
-
-.theme-light a:focus-visible {
-  outline: 1px solid var(--text-color);
-}
-
-.theme-light button:focus-visible {
-  border-bottom: 1px solid var(--text-color);
-}
-
-.theme-light .header__rec {
-  visibility: hidden;
-}
-
-.theme-light .header__theme-menu-item:hover {
-  outline: 1px solid rgba(50, 49, 45, 0.4);
-}
-
-.theme-light .header__theme-menu-button {
-  color: var(--text-color);
-}
-
-.theme-light .header__theme-menu-button_active {
-  outline: 1px solid var(--text-color);
-}
-
-.theme-light .header__title {
-  color: var(--title-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
-}
-
-.theme-light .main {
-  background-color: var(--bg-color);
-}
-
-.theme-light .content__section-title {
-  color: var(--text-title-color);
-}
-
-.theme-light .footer {
-  background-color: var(--bg-color);
-}
-
-.theme-light .footer__title {
-  color: var(--title-color);
-  text-shadow: 2px 2px 0 var(--accent-color);
-}
+/* Вам также нужно будет написать ряд подобных селекторов */
+/* .theme-light .page {} */

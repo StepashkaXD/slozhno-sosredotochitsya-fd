@@ -1,5 +1,4 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
   font-family: var(--font-family, sans-serif);
   font-weight: var(--font-regular);
@@ -10,13 +9,12 @@
   background-size: cover;
   background-attachment: fixed;
   font-size: 18px;
-
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
 .decorated-zone::after {
-  border-left: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--decorative-color);
+  border-bottom: 1px solid var(--decorative-color);
   position: absolute;
   content: "";
   width: 25px;
@@ -26,8 +24,8 @@
 }
 
 .decorated-zone::before {
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--decorative-color);
+  border-right: 1px solid var(--decorative-color);
   position: absolute;
   content: "";
   width: 25px;
@@ -39,7 +37,7 @@
 .title-decor {
   background-color: var(--accent-color);
   font-weight: var(--font-bold);
-  color: var(--text-title-color);
+  color: var(--decorative-text-color);
 }
 
 .text-link {
@@ -84,7 +82,7 @@ button:focus-visible {
 .header__rec {
   font-family: var(--font-family);
   font-weight: var(--font-regular);
-  color: var(--accent-color);
+  color: var(--decorative-color);
   position: absolute;
   top: 10px;
   right: 38px;
@@ -95,8 +93,8 @@ button:focus-visible {
 }
 
 .header__rec::after {
-  background-color: var(--accent-color);
-  box-shadow: 0 0 4px 2px var(--accent-color);
+  background-color: var(--decorative-color);
+  box-shadow: 0 0 4px 2px var(--decorative-color);
   position: absolute;
   content: "";
   border-radius: 50%;
@@ -113,13 +111,13 @@ button:focus-visible {
 }
 
 .header__theme-menu-item:hover {
-  outline: 1px solid rgba(255, 0, 112, 0.4);
+  outline: 1px solid var(--transparent-color);
 }
 
 .header__theme-menu-button {
   font-family: var(--font-family);
   font-weight: var(--font-regular);
-  color: var(--accent-color);
+  color: var(--decorative-color);
   font-size: 18px;
   line-height: 100%;
   text-align: center;
@@ -131,14 +129,14 @@ button:focus-visible {
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid var(--decorative-color);
   pointer-events: none;
 }
 
 .header__title {
   font-family: var(--font-family);
   font-weight: var(--font-bold);
-  color: var(--title-color);
+  color: var(--header-title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
@@ -172,13 +170,12 @@ button:focus-visible {
 .content__section-title {
   font-family: var(--font-family);
   font-weight: var(--font-bold);
-  color: var(--accent-color);
+  color: var(--section-title-color);
   line-height: 130%;
   font-size: 18px;
   margin-bottom: 20px;
 }
-
-.content__section-article-title {
+.header__theme-menu-item:hover .content__section-article-title {
   font-family: var(--font-family);
   margin-bottom: 10px;
   font-size: 18px;
@@ -233,7 +230,7 @@ button:focus-visible {
 .footer__title {
   text-shadow: 2px 2px 0 var(--accent-color);
   font-family: var(--font-family);
-  color: var(--title-color);
+  color: var(--header-title-color);
   font-weight: var(--font-bold);
   justify-self: center;
   align-self: center;
@@ -242,6 +239,7 @@ button:focus-visible {
 }
 
 @media (width >= 768px) {
+
   /* HEADER */
 
   .header {
@@ -339,6 +337,7 @@ button:focus-visible {
 }
 
 @media (width >= 1024px) {
+
   /* HEADER */
 
   .header__theme-menu {

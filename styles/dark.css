@@ -9,88 +9,29 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --font-family: "IBM Plex Mono";
-  --font-bold: bold;
-  --font-regular: normal;
   --bg-image: url("../images/cover-image-dark.png");
   --bg-color: #000028;
   --accent-color: #ff0070;
-  --title-color: #db00ff;
   --text-color: #f1b2ce;
-  --text-title-color: #000028;
+  --header-title-color: #db00ff;
+  --section-title-color: #ff0070;
+  --decorative-color: #ff0070;
+  --decorative-text-color: #000028;
+  --transparent-color: rgba(255, 0, 112, 0.4);
 }
 
 .theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-  color: var(--text-color);
-  background-image: var(--bg-image);
-}
+  --bg-image: url("../images/cover-image-dark.png");
+  --bg-color: #000028;
+  --accent-color: #ff0070;
+  --text-color: #f1b2ce;
+  --header-title-color: #db00ff;
+  --section-title-color: #ff0070;
+  --decorative-color: #ff0070;
+  --decorative-text-color: #000028;
+  --transparent-color: rgba(255, 0, 112, 0.4);
 
-.theme-dark .decorated-zone::after {
-  border-left: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
-}
-
-.theme-dark .decorated-zone::before {
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
-}
-
-.theme-dark .title-decor {
-  background-color: var(--accent-color);
-  color: var(--text-title-color);
-}
-
-.theme-dark .text-link {
-  text-shadow: 2px 2px 0 var(--accent-color);
-}
-
-.theme-dark a:hover {
-  border-bottom: 1px solid var(--text-color);
-}
-
-.theme-dark a:focus-visible {
-  outline: 1px solid var(--text-color);
-}
-
-.theme-dark button:focus-visible {
-  border-bottom: 1px solid var(--text-color);
-}
-
-/* .theme-dark .header__rec {
-  visibility: hidden;
-} */
-
-.theme-dark .header__theme-menu-item:hover {
-  outline: 1px solid rgba(255, 0, 112, 0.4);
-}
-
-.theme-dark .header__theme-menu-button {
-  color: var(--accent-color);
-}
-
-.theme-dark .header__theme-menu-button_active {
-  outline: 1px solid var(--accent-color);
-}
-
-.theme-dark .header__title {
-  color: var(--title-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
-}
-
-.theme-dark .main {
-  background-color: var(--bg-color);
-}
-
-.theme-dark .content__section-title {
-  color: var(--accent-color);
-}
-
-.theme-dark .footer {
-  background-color: var(--bg-color);
-}
-
-.theme-dark .footer__title {
-  color: var(--title-color);
-  text-shadow: 2px 2px 0 var(--accent-color);
+  .header__rec {
+    visibility: visible;
+  };
 }
