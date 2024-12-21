@@ -38,7 +38,6 @@
 
 .theme-dark .title-decor {
   background-color: var(--accent-color);
-  color: var(--text-color);
   color: var(--text-title-color);
 }
 
