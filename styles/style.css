@@ -175,7 +175,7 @@ button:focus-visible {
   font-size: 18px;
   margin-bottom: 20px;
 }
-.header__theme-menu-item:hover .content__section-article-title {
+.content__section-article-title {
   font-family: var(--font-family);
   margin-bottom: 10px;
   font-size: 18px;
