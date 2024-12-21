@@ -14,6 +14,7 @@
   --accent-color: #ff8dcb;
   --title-color: #ffc2e6;
   --text-color: #353430;
+  --text-title-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -23,6 +24,7 @@
     --accent-color: #ff8dcb;
     --title-color: #ffc2e6;
     --text-color: #353430;
+    --text-title-color: #353430;
   }
 }
 
@@ -45,6 +47,7 @@
 .theme-light .title-decor {
   background-color: var(--accent-color);
   color: var(--text-color);
+  color: var(--text-title-color);
 }
 
 .theme-light .text-link {
@@ -89,7 +92,7 @@
 }
 
 .theme-light .content__section-title {
-  color: var(--text-color);
+  color: var(--text-title-color);
 }
 
 .theme-light .footer {

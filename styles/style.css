@@ -15,10 +15,10 @@
 }
 
 .decorated-zone::after {
-  position: absolute;
-  content: "";
   border-left: 1px solid var(--accent-color);
   border-bottom: 1px solid var(--accent-color);
+  position: absolute;
+  content: "";
   width: 25px;
   height: 24px;
   left: 10px;
@@ -26,10 +26,10 @@
 }
 
 .decorated-zone::before {
-  position: absolute;
-  content: "";
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
+  position: absolute;
+  content: "";
   width: 25px;
   height: 24px;
   top: 10px;
@@ -39,7 +39,7 @@
 .title-decor {
   background-color: var(--accent-color);
   font-weight: var(--font-bold);
-  color: var(--text-color);
+  color: var(--text-title-color);
 }
 
 .text-link {
@@ -82,12 +82,12 @@ button:focus-visible {
 }
 
 .header__rec {
-  position: absolute;
-  top: 10px;
-  right: 38px;
   font-family: var(--font-family);
   font-weight: var(--font-regular);
   color: var(--accent-color);
+  position: absolute;
+  top: 10px;
+  right: 38px;
   font-size: 18px;
   line-height: 139%;
   text-align: center;
@@ -95,10 +95,10 @@ button:focus-visible {
 }
 
 .header__rec::after {
-  position: absolute;
-  content: "";
   background-color: var(--accent-color);
   box-shadow: 0 0 4px 2px var(--accent-color);
+  position: absolute;
+  content: "";
   border-radius: 50%;
   inline-size: 9px;
   block-size: 9px;
@@ -222,24 +222,23 @@ button:focus-visible {
 /* FOOTER */
 
 .footer {
+  background-color: var(--bg-color);
   position: relative;
   padding: 10px;
   display: grid;
-  height: 100vh;
-  background-color: var(--bg-color);
   height: 100vh;
   min-block-size: 667px;
 }
 
 .footer__title {
-  justify-self: center;
-  align-self: center;
+  text-shadow: 2px 2px 0 var(--accent-color);
   font-family: var(--font-family);
   color: var(--title-color);
   font-weight: var(--font-bold);
+  justify-self: center;
+  align-self: center;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
-  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 @media (width >= 768px) {
